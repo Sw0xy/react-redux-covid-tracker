@@ -4,23 +4,21 @@ import { useSelector } from "react-redux";
 
 function Chart() {
 
-  const asd = useSelector((state) => state.covid.items);
+  const data = useSelector((state) => state.covid.items);
     const conut = useSelector((state) => state.covid.newCountry);
- if (asd.length === 0) {
-    return <div>Loading....</div>;
-  }
+
     
   console.log(conut);
    
   const newdata = [
     {
         
-        "deaths": asd.deaths.value,
+        "deaths": data.deaths.value,
         "deathsColor": "hsl(200, 70%, 50%)"
       },
       {
         "country": "AE",
-        "confirmed": asd.confirmed.value,
+        "confirmed": data.confirmed.value,
         "confirmedColor": "hsl(120, 70%, 50%)",
        
       },
@@ -30,7 +28,7 @@ function Chart() {
   return (
    <>
    {
-       asd.length === 0 ? (
+       data.length === 0 ? (
             <div>Loading....</div>
             ) : (
                 <ResponsiveBar
