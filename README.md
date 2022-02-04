@@ -2,7 +2,7 @@
 
 # Live
 
-Live ()
+Live [https://focused-einstein-014547.netlify.app/]
 ## Available Scripts
 
 In the project directory, you can run:
