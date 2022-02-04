@@ -39,7 +39,6 @@ export const fetchDailyData = createAsyncThunk(
 export const covidSlice = createSlice({
   name: "covid",
   initialState: {
-    newCountry: "Algeria",
     items: [],
     dailyData: [],
     countries: [],
@@ -48,11 +47,6 @@ export const covidSlice = createSlice({
   },
 
   reducers: {
-    setCountry: (state, action) => {
-      state.newCountry = action.payload;
-      console.log(state.newCountry);
-    }
-
 
   },
   extraReducers: {
@@ -92,7 +86,6 @@ export const covidSlice = createSlice({
   },
 });
 
-export const { setCountry } = covidSlice.actions;
 
 export const dataSelector = (state) => state.covid.data;
 
