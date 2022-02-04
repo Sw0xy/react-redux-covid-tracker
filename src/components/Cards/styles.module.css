@@ -1,0 +1,66 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  color: white;
+}
+.card1 {
+  padding: 20px;
+  background: radial-gradient(
+    174.6% 94.1% at 50% 21.61%,
+    #2b99ff 0%,
+    rgba(43, 153, 255, 0) 100%
+  );
+  backdrop-filter: blur(25px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 13px;
+}
+
+.card2 {
+  padding: 20px;
+  background: radial-gradient(
+    174.6% 94.1% at 50% 21.61%,
+    #ff2b2b 0%,
+    rgba(255, 43, 43, 0) 100%
+  );
+  backdrop-filter: blur(25px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 13px;
+}
+
+.card3 {
+  padding: 20px;
+  background: radial-gradient(
+    174.6% 94.1% at 50% 21.61%,
+    #45ff35 0%,
+    rgba(43, 153, 255, 0) 100%,
+    #39ff35 100%,
+    #45ff35 100%
+  );
+  backdrop-filter: blur(25px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 13px;
+}
+.card__header{
+    font-weight: 500;
+   
+    
+}
+.last__update{
+    font-size: 0.75rem;
+    font-weight: 400;
+  
+}
+.footer__text{
+    font-size: 0.75rem;
+    font-weight: 400;
+    
+}
+.infected{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
