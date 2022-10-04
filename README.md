@@ -2,7 +2,7 @@
 
 # Live
 
-Live [https://focused-einstein-014547.netlify.app/]
+Live [https://react-redux-covid-tracker.netlify.app/]
 ## Available Scripts
 
 In the project directory, you can run:
